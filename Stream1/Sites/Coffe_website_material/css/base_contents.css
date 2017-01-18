@@ -1,0 +1,250 @@
+* {
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+body {
+
+	padding: 0px;
+	font-family: 'PT Sans';
+/*	color: black;
+*/	font-size: 16px;
+	font-size: 90%;
+	margin: 20px;
+/*	background: url(../imgs/sack_background.png) repeat;
+*/
+	background: url("../imgs/main_page_coffee-background.png") ;
+	background-position: fixed;
+
+}
+
+.maincontent {
+
+	/*background: rgba(166, 81, 30, 0.85);*/
+/*	background: rgba(255,255,255,0.8);
+*/	border: 3px solid #efefef;
+/*	padding: 20px;
+*/
+	width: 900px;
+	margin: auto;
+
+}
+
+@media only screen and (max-width:767px) {
+
+	.maincontent {
+
+ 		width: 100%;
+	}
+
+
+}
+
+@media only screen and (max-width:767px) {
+
+	nav {
+
+		display: none !important;
+	}
+}
+
+#mainflex {
+
+    margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+
+}
+
+#aside {
+
+	display: flex;
+	flex-direction: column;
+}
+
+#aside > p {
+
+	margin: 30px;
+}
+
+#mainleft  {
+
+	display: flex;
+	flex-direction: column;
+	padding-right: 10px;
+	border-right: 3px solid #efefef;
+
+}
+
+main {
+
+	background-color: rgba(0,0,0,0.8);
+}
+
+header {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+header > h1 {
+	margin-left: 20px;
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+}
+
+footer {
+
+	background-color: #efefef;
+	padding: 10px;
+	color: black;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 80%;
+	text-align: center;
+}
+
+
+.flexbox-row {
+	flex-direction: row;
+}
+
+.flexbox-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flexbox-column {
+	flex-direction: column;
+}
+
+.flexbox-column-reverse {
+	flex-direction: column-reverse;
+}
+
+.flexbox-item-blue {
+	background-color: rgb(41, 171, 226);
+	color: rgb(0, 113, 187);
+
+}
+
+.flexbox-item-magenta {
+	background-color: rgb(237, 30, 121);
+	color: rgb(158, 0, 93);
+}
+
+
+header > nav {
+
+/*	background-color: rgba(58, 17, 5, 0.5);
+*/	display: flex;
+	padding: 10px;
+	/*border-right: 1px solid black; */
+	border-bottom: 3px solid #efefef;
+	border-left: 3px solid #efefef;
+/*	background-color: rgba(0,0,0,1);
+*/
+}
+
+header > nav > a {
+
+	/*display: inline-block;*/
+	padding: 5px;
+	background-color: rgb(151, 108, 86);
+	font-family: 'Courgette', cursive;
+	margin: 2px;
+	color: black;
+	border: 2px solid #efefef;
+	text-decoration: none;
+
+
+}
+
+
+#link-brazil:before {
+	content: url("../imgs/flags/flags/24/Brazil.png");
+	margin-right: 3px;
+
+
+}
+
+#link-colombia:before {
+	content: url("../imgs/flags/flags/24/Colombia.png");
+	margin-right: 3px;
+
+
+}
+
+#link-india:before {
+	content: url("../imgs/flags/flags/24/India.png");
+	margin-right: 3px;
+
+
+}
+
+#link-ethiopia:before {
+	content: url("../imgs/flags/flags/24/Ethiopia.png");
+	margin-right: 3px;
+
+
+}
+
+#link-kenya:before {
+	content: url("../imgs/flags/flags/24/Kenya.png");
+	margin-right: 3px;
+
+
+}
+
+#link-costa-rica:before {
+	content: url("../imgs/flags/flags/24/Brazil.png");
+	margin-right: 3px;
+
+
+}
+
+
+
+nav a:before {
+	font-family:'FontAwesome';
+
+}
+
+header > nav > a:visited {
+}
+
+header > nav > a:hover {
+
+	color: #FFF;
+	/* background-color: rgba(151, 108, 86, 0.5); */
+	background-color: rgba(0,0,0,0.5);
+}
+
+
+a:active {
+	color: red;
+	text-decoration: none;
+}
+
+.copyright:before {
+
+	content: '\00a9';
+	margin-right: 3px;
+
+}
+
+figure {
+
+	margin-top: 15px;
+	padding: 0;
+}
+
+figure > figcaption {
+
+	font-size: 170%;
+	color: orange;
+	font-family: 'Courgette', cursive;
+
+}
+

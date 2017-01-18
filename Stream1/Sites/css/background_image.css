@@ -1,0 +1,432 @@
+/* body style */
+
+* {
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+html,body {
+
+	margin: 0;
+	font-family: "Signika,Arial, sans-serif";
+	font-size: 16px;
+	font-size: 100%;
+}
+
+body {
+	background-color: #B9CE00;
+}
+
+/* paragraph style */
+
+
+p {
+
+	font-family: 'Signika', sans-serif;
+	color: black;
+	font-size: .875em;
+	text-align: justify;
+
+}
+
+h1 {
+	color: green;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+h2 {
+	color: blue;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.inline {
+
+	display: inline;
+
+}
+
+div.internal {
+
+	background-color: red;
+	width: 300px;
+	margin: 10px;
+	padding: 20px;
+	border: 5px dashed yellow;
+	height: 80%;
+}
+
+div.external {
+
+	background-color: blue;
+	width: 500px;
+	margin: 50px;
+	height: 500px;
+
+}
+
+
+
+.main {
+
+	width: 720px;
+	margin: 0 auto;
+	background-color: white;
+	height: 100%;
+
+}
+
+.top {
+	width: 100%;
+	height: 80px;
+	background-color: red;
+
+	/* display: table; */
+
+	/* by setting font size to zero,
+	   we can get rid of automatically generated
+	   gap */
+
+	/* font-size: 0; */
+
+}
+
+.top {
+
+	/* removing  'display: inline-block;'
+	disables the divs from being rendered inline */
+
+/*	display: inline-block;
+*/
+
+	background-image: -webkit-linear-gradient(#8EA202, #DFFD0D);
+
+	height: 100px;
+	/*margin: 0 auto;*/
+	width: 100%;
+
+}
+
+.topLogo {
+
+	float: left;
+	left: 10px;
+	top: 10px;
+	width: 30%;
+
+}
+
+div.navigation  {
+
+	height: 100%;
+	float: left;
+	width: 70%;
+	position: relative;
+
+}
+
+div.navigation ul {
+
+	font-family: 'Quicksand', sans-serif;
+	transform: translate(0%, -50%);
+	top:50%;
+	right: 0;
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+
+
+.navigation ul li {
+
+	display: inline-block;
+	padding: 10px;
+	border: 2px solid #eeeeee;
+	margin-right: 10px;
+	background-color: rgba(0,0,0,0.2);
+
+
+
+
+}
+
+.navigation ul li:hover {
+
+	background-color: green;
+}
+
+.navigation ul li:a {
+
+
+
+}
+
+.navigation ul li a:hover {
+
+	color: white;
+	background-color: green;
+
+}
+
+
+
+.banner {
+/*	height: 180px;
+*/	width: 720px;
+	height: 300px;
+	background-size: cover;
+	background-image: url("../images/lion.jpg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	position: relative;
+
+}
+
+
+.caption {
+	position: absolute;
+	/*background-color: black;*/
+	background-color: rgba(0,0,0, 0.5);
+	/*width: 300px;*/
+	color: white;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+
+	padding: 20px;
+/*			line-height: 50px;
+	top: calc(50% - 25px);
+	left: calc(50% - 150px);
+*/
+	z-index: 2;
+
+}
+
+.content {
+
+	width: 100%;
+
+}
+
+
+.content div {
+
+	width: calc(100%/2);
+	/*display: table;*/
+/*	display: inline-block;*/
+	padding: 14px;
+	/*height: 60%; */
+	background-color: white;
+
+}
+
+.column {
+
+	float: left;
+
+}
+
+.clear {
+	clear: both;
+}
+
+.hrMargin {
+	margin: 0 14px;
+
+}
+
+.blackMeta {
+	font-weight: bold;
+	color: black;
+}
+
+
+.footer {
+
+	height: 50px;
+	margin: 0 14px;
+/*	background-color: orange;
+*/
+	clear: both;
+
+}
+
+.footer p {
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.8em;
+
+}
+
+
+td {
+	outline: 1px solid black;
+}
+
+a,
+a:link,
+a:active {
+	color: red;
+	text-decoration:none;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+
+	color: #FFF;
+	background-color: red;
+}
+
+
+a:active {
+	color: red;
+	text-decoration: none;
+}
+
+.content p:first-line {
+
+	color: red;
+}
+
+.content p:first-letter {
+
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: 'Playball', cursive;
+	color: green;
+
+
+}
+
+.content p:first-child {
+	color: blue;
+}
+
+ul.shamrock li {
+
+	list-style: none;
+	position: relative;
+	/*height: 50px;*/
+}
+
+ul.shamrock li:before {
+
+	content:"";
+	background: url("../images/shamrock.png") top left;
+	display: block;
+	width: 50px;
+	height: 46px;
+	position: absolute;
+	left: -60px;
+
+
+}
+
+ul.shamrock2 li {
+
+	list-style: none;
+	position: relative;
+	/*height: 50px;*/
+}
+
+ul.shamrock2 li:before {
+
+	content:"\2618";
+	display: block;
+	width: 50px;
+	height: 46px;
+	position: absolute;
+	left: -60px;
+
+
+}
+
+.column ul li:first-child {
+	border-top: 2px solid green;
+}
+
+.column ul li:last-child {
+	border-bottom: 3px dotted red;
+}
+
+
+.column ul li:first-child {
+	border-top: 2px solid green;
+}
+
+.column ul li:last-child {
+	border-bottom: 3px dotted red;
+}
+
+table tr:nth-child(even) {
+	background-color: red;
+}
+
+table tr:nth-child(odd) {
+	background-color: green;
+}
+
+.column ul li:nth-child(2n+1) {
+	color: orange;
+	background-color: blue;
+}
+/*
+table tr:nth-child(n+3):nth-child(-n+6) {
+
+	background-color: orange;
+
+}*/
+
+table tr:nth-child(3),table tr:nth-child(6) {
+
+	background-color: orange;
+}
+
+input {
+
+	border: 3px solid #EFEFEF;
+}
+
+input[type="submit"] {
+	border: 1px solid red;
+}
+
+/*:not(.column) p {
+	text-decoration: underline;
+}*/
+
+p:not(.blackMeta) {
+	/*color: orange;*/
+}
+
+blockquote {
+	position: relative;
+	margin-left: 300px auto;
+}
+
+blockquote:before, blockquote:after {
+
+	content: '"';
+	display: block;
+	font-size: 100px;
+	position: absolute;
+	top: -50px;
+
+}
+
+blockquote:before {
+	margin-right: 50px;
+	left: -65px;
+}
+
+
+blockquote:after {
+}

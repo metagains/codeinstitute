@@ -1,0 +1,117 @@
+* {
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+body {
+
+	margin: 0;
+	font-family: "Signika,Arial, sans-serif";
+	font-size: 16px;
+	font-size: 90%;
+	background-color: white;
+	margin: 10px;
+}
+
+/* begin styling flexbox container */
+
+.flexbox {
+
+	/*margin: 10px;*/
+	background-color: rgb(230, 230, 230);
+	border: 2px solid rgb(182, 182, 182);
+	display: flex;
+	height: 300px;
+	width: 300px;
+	margin: 0;
+
+
+}
+
+.flexbox li {
+
+
+	height: 30px;
+	width: 30px;
+	border: 2px solid grey;
+	padding: 5px;
+	font-weight: bold;
+	margin: 5px;
+	text-align: center;
+
+
+}
+
+
+
+.flexbox-row {
+	flex-direction: row;
+}
+
+.flexbox-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flexbox-column {
+	flex-direction: column;
+}
+
+.flexbox-column-reverse {
+	flex-direction: column-reverse;
+}
+
+span {
+	margin:0;
+}
+
+
+/* end styling flexbox container */
+
+/* begin styling of flexbox items */
+
+
+/*.default-flexbox-item-shape {
+
+	height: 30px;
+	width: 30px;
+	border: 2px solid grey;
+	padding: 5px;
+	font-weight: bold;
+	margin: 5px;
+
+}*/
+
+ul {
+
+	margin: 0;
+	list-style-type: none;
+}
+
+/*ul li {
+
+	margin: 0;
+	padding; 0;
+}*/
+
+.flexbox-item-blue {
+	background-color: rgb(41, 171, 226);
+	color: rgb(0, 113, 187);
+
+}
+
+.flexbox-item-magenta {
+	background-color: rgb(237, 30, 121);
+	color: rgb(158, 0, 93);
+}
+
+.flexbox-item-blue-text {
+	color: rgb(0, 113, 187);
+}
+
+.flexbox-item-magenta-text {
+	color: rgb(158, 0, 93);
+}
+
+/* end styling of flexbox items */

@@ -1,0 +1,121 @@
+/* this is an example of id and class selectors */
+
+
+/* body style */
+
+body {
+	margin: 0;
+	background-color: #B9CE00 ;
+	font-family: Monaco, Arial, sans-serif;
+}
+
+/* paragraph style */
+
+
+p {
+
+	font-family: Monaco, Arial, sans-serif;
+	color: red;
+}
+
+
+/* div style */
+
+
+
+
+div {
+
+	background-color: black;
+	color: white;
+}
+
+h1 {
+
+	text-decoration: overline;
+
+}
+
+h2 {
+
+	font-style: italic;
+}
+
+ul li {
+
+	color: red;
+
+}
+
+#roman {
+
+	list-style-type: lower-roman;
+}
+
+/*ul li li {
+	color: green;
+	list-style-type: circle;
+}*/
+
+ul li {
+
+	color: black;
+}
+
+ul li li {
+
+	color: red;
+}
+
+ul li li li {
+	color: green;
+}
+
+table {
+
+	width: 100%;
+	border: 0;
+	padding: 0;
+}
+
+.layoutTable {
+	width: 720px;
+	background-color: red;
+
+}
+
+
+
+.fullWidth {
+
+	width: 100%;
+	padding: 0;
+	background-color: gray;
+}
+
+.fullWidth.bkgWhite {
+	background-color: white;
+}
+
+.fullWidth .bkgBlue {
+	background-color: aqua;
+}
+
+.fullWidth.bkgBlue {
+	background: blue;
+}
+
+/*blockquote.fullWidth {
+	width: 100%;
+}*/
+
+#myspan {
+
+	color: magenta;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+p span {
+	color: green;
+}

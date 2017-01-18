@@ -1,0 +1,363 @@
+/* body style */
+
+* {
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-box-sizing: border-box;
+}
+
+html,body {
+
+	margin: 0;
+	font-family: "Arial, sans-serif";
+	font-size: 16px;
+	font-size: 100%;
+}
+
+body {
+	background-color: #B9CE00;
+}
+
+/* paragraph style */
+
+
+p {
+
+	font-family: "Monaco, Arial, sans-serif";
+	color: black;
+	font-size: .875em;
+	text-align: justify;
+
+}
+
+h1 {
+	color: green;
+}
+
+h2 {
+	color: blue;
+}
+
+.inline {
+
+	display: inline;
+
+}
+
+div.internal {
+
+	background-color: red;
+	width: 300px;
+	margin: 10px;
+	padding: 20px;
+	border: 5px dashed yellow;
+	height: 80%;
+}
+
+div.external {
+
+	background-color: blue;
+	width: 500px;
+	margin: 50px;
+	height: 500px;
+
+}
+
+
+
+.main {
+
+	width: 720px;
+	margin: 0 auto;
+	background-color: white;
+	height: 100%;
+
+}
+
+.top {
+	width: 100%;
+	height: 80px;
+	background-color: red;
+
+	/* display: table; */
+
+	/* by setting font size to zero,
+	   we can get rid of automatically generated
+	   gap */
+
+	/* font-size: 0; */
+
+}
+
+.top div {
+
+	/* removing  'display: inline-block;'
+	disables the divs from being rendered inline */
+
+/*	display: inline-block;
+*/
+
+	height: 100%;
+	margin: 0 auto;
+
+}
+
+.topLeft {
+
+	width: 190px;
+	background-color: #6F7D02;
+	float: left;
+
+}
+
+.topCenter {
+
+	width: 274px;
+	background-color: #8EA202;
+	float: left;
+
+}
+
+.topRight {
+
+	width: 256px;
+	background-color: #DFFD0D;
+	float: left;
+}
+
+
+
+
+.banner img {
+/*	height: 180px;
+*/	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+
+.content {
+
+	width: 100%;
+
+}
+
+
+.content div {
+
+	width: calc(100%/2);
+	/*display: table;*/
+/*	display: inline-block;*/
+	padding: 14px;
+	/*height: 60%; */
+	background-color: white;
+
+}
+
+.column {
+
+	float: left;
+
+}
+
+.clear {
+	clear: both;
+}
+
+.hrMargin {
+	margin: 0 14px;
+
+}
+
+.blackMeta {
+	font-weight: bold;
+	color: black;
+}
+
+
+.footer {
+
+	height: 50px;
+	margin: 0 14px;
+/*	background-color: orange;
+*/
+	clear: both;
+
+}
+
+.footer p {
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.8em;
+
+}
+
+
+td {
+	outline: 1px solid black;
+}
+
+a,
+a:link,
+a:active {
+	color: red;
+	text-decoration:none;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+
+	color: #FFF;
+	background-color: red;
+}
+
+
+a:active {
+	color: red;
+	text-decoration: none;
+}
+
+.content p:first-line {
+
+	color: red;
+}
+
+.content p:first-letter {
+
+	font-weight: bold;
+	font-size: 1.5em;
+	font-family: 'Playball', cursive;
+	color: green;
+
+
+}
+
+.content p:first-child {
+	color: blue;
+}
+
+ul.shamrock li {
+
+	list-style: none;
+	position: relative;
+	/*height: 50px;*/
+}
+
+ul.shamrock li:before {
+
+	content:"";
+	background: url("../images/shamrock.png") top left;
+	display: block;
+	width: 50px;
+	height: 46px;
+	position: absolute;
+	left: -60px;
+
+
+}
+
+ul.shamrock2 li {
+
+	list-style: none;
+	position: relative;
+	/*height: 50px;*/
+}
+
+ul.shamrock2 li:before {
+
+	content:"\2618";
+	display: block;
+	width: 50px;
+	height: 46px;
+	position: absolute;
+	left: -60px;
+
+
+}
+
+ul li:first-child {
+	border-top: 2px solid green;
+}
+
+ul li:last-child {
+	border-bottom: 3px dotted red;
+}
+
+
+ul li:first-child {
+	border-top: 2px solid green;
+}
+
+ul li:last-child {
+	border-bottom: 3px dotted red;
+}
+
+table tr:nth-child(even) {
+	background-color: red;
+}
+
+table tr:nth-child(odd) {
+	background-color: green;
+}
+
+ul li:nth-child(2n+1) {
+	color: orange;
+	background-color: blue;
+}
+/*
+table tr:nth-child(n+3):nth-child(-n+6) {
+
+	background-color: orange;
+
+}*/
+
+table tr:nth-child(3),table tr:nth-child(6) {
+
+	background-color: orange;
+}
+
+input {
+
+	border: 3px solid #EFEFEF;
+}
+
+input[type="submit"] {
+	border: 1px solid red;
+}
+
+/*:not(.column) p {
+	text-decoration: underline;
+}*/
+
+p:not(.blackMeta) {
+	color: orange;
+}
+
+blockquote {
+	position: relative;
+	margin-left: 300px auto;
+}
+
+blockquote:before, blockquote:after {
+
+	content: url("../images/comma.png");
+/*	display: block;
+*/	font-size: 100px;
+	position: absolute;
+	top: -50px;
+
+}
+
+blockquote:before {
+	margin-right: 50px;
+	left: -65px;
+}
+
+
+blockquote:after {
+}
