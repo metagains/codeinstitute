@@ -7,4 +7,33 @@ body {
     text-align: center;
 }
 
+.container {
 
+	background-color: rgb(208, 208, 208);
+}
+
+
+.iconified:before {
+
+	content:"\e019";
+	font-family: "Glyphicons Halflings";
+	color: yellow;
+
+
+}
+
+.navbar-brand {
+
+
+}
+
+.mynav {
+
+	background-color: black;
+}
+
+.myfooter {
+
+	background-color: black;
+	margin-top: 10px;
+}
