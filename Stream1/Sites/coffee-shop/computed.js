@@ -1,0 +1,1 @@
+var details1 = "<span>Name: <strong><span id='coffeeName'>" + brasilCofee.name + "</span></strong></span>";

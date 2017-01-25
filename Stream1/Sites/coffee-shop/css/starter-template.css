@@ -1,22 +1,22 @@
 
-html {
-font-family: 'Comfortaa', sans-serif;
+/*html {
+font-family: Gotham, 'Comfortaa', sans-serif;
 
-}
+}*/
 
 body {
     padding-top: 50px;
     background: url('../images/main_page_coffee-background.png');
 	background-position: static;
 	color: white;
-	font-family: 'Comfortaa', sans-serif;
+	font-family: Gotham, 'Comfortaa', sans-serif;
 
 
 }
 
 .starter-template {
     padding: 40px 15px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .container {
@@ -169,10 +169,10 @@ ul {
 
 #mainmessage {
 
-	background: rgba(255,255,255,0.6);
-	border: 2px solid black;
+	background: rgba(255,255,255,0.95);
+	border: 1px solid black;
 	color: black;
-	padding: 10px;
+	padding: 30px;
 
 }
 
@@ -186,6 +186,8 @@ ul {
 	margin-top: 10px;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 
@@ -208,17 +210,98 @@ ul {
 
 .availability {
 
-	border-top: 1px solid black;
+	border-top: 1px dashed black;
 	border-bottom: 1px dashed black;
-	margin-top: 5px;
+	margin-top: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 0;
+	display: block;
+	margin-bottom: 10px;
+	position: relative;
 }
 
-div .shipping, .available {
+span .shipping, .available {
 	margin-top: 10px;
 	display: inline-block;
+
 }
 
 
-h3 {
+h3.shoptitle {
 	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.greetingtext{
+	font-weight: bold;
+
+}
+
+#weights-chosen {
+
+	border-bottom: 1px solid grey ;
+	padding-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.review {
+
+
+}
+
+.reviewtext {
+
+	background-color: rgb(28, 28, 28);
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-spacing: 5px 5px;
+	color: rgb(172, 121, 46);
+
+}
+
+.thin-border-top {
+
+	border-top: 1px solid gray;
+	margin-bottom: 5px;
+}
+
+.thin-border-bottom {
+	padding-bottom: 5px;
+	border-bottom: 1px solid gray;
+}
+
+.calc-span {
+	font-weight: bold;
+}
+
+.calc-column-block {
+
+	display: inline-block;
+	padding: 5px;
+	background-color: rgb(202, 185, 155);
+}
+
+.special-offer {
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid grey;
+
+}
+
+.review-border {
+
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }

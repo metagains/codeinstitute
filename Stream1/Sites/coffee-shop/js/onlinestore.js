@@ -39,8 +39,7 @@ var username = "Donald Trump";
 var message = "Good " + getGreetingMessage(today);
 
 
-document.getElementById('greetingtext').innerHTML = message ;
-document.getElementById('username').innerHTML = username;
+/*document.getElementById('username').innerHTML = username;*/
 
 window.onresize = function() {
 	console.log("height: " + window.innerHeight + " width:" + window.innerWidth);
@@ -53,8 +52,8 @@ var finalHeight = function () {
 
 var messageOffer = "Take a look at our special offers: <a href='http://www.google.com' alt='45% offer'>45%</a>";
 
-document.getElementById("messageOffer").innerHTML = messageOffer;
-
+/*document.getElementById("messageOffer").innerHTML = messageOffer;
+*/
 
 
 /*var instock = false;
@@ -73,6 +72,12 @@ function updateElementClass(elementName, className) {
 }
 
 
+function updateInnterHTML(id, content) {
+
+	document.getElementById(id).innerHTML = content;
+
+}
+
 /*  change availability to true */
 var canship = false;
 updateElementClass("shipping", canship);
@@ -82,3 +87,11 @@ updateElementClass("shipping", canship);
 var instock = true;
 updateElementClass("stock", instock);
 
+
+var availableWeights = new Array("250g", "500g", "1kg");
+
+updateInnterHTML("availableWeights", availableWeights.join('/'));
+updateInnterHTML("selectedWeight", availableWeights[1]);
+
+//document.getElementById("availableWeights").innerHTML = availableWeights.join("/");
+//

@@ -9,8 +9,8 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cabin|Comfortaa|PT+Sans+Caption|Ubuntu" rel="stylesheet">
-<link rel="stylesheet" href="css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Comfortaa|PT+Sans+Caption|Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <link href="css/starter-template.css" rel="stylesheet">
 
 
@@ -55,38 +55,43 @@
         <div class="starter-template">
 
 
-        <div id="mainmessage" class="col-lg-4 col-lg-offset-4">
-        <h3>Specialty Coffee Shop</h3>
-            <span id="greetingtext">[greeting]</span> <span id="username">myusername</span> thank you for visting my coffee shop.
+          <div id="mainmessage" class="col-lg-4 col-lg-offset-4">
+            <h3 class="shoptitle">Specialty Coffee Shop</h3>
+            <span class="greeting" id="greetingtext">greeting</span> <span class="greetingtext" id="username">myusername</span>
             <form  action="javascript:totalPriceCallback(document.getElementById('units').value, document.getElementById('price').value)">
-
-
-            <div class="form-group">
-              <label for="units">Number of cups:</label>
-              <input type="text" class="form-control" id="units">
+              <div id="weights-chosen">
+                <div style="text-align:left;"><span>Available Weights:</span><span id="availableWeights"></span></div>
+                <div style="text-align: left;"><span>Selected Weight: </span><span id="selectedWeight"></span></div>
+              </div>
+              <div class="row">
+              <div class="form-inline col-lg-2 col-lg-offset-8">
+                <label for="numunits">Units</label>
+                <input type="text" class="form-control" id="numunits">
+              </div>
+              </div>
+              <!-- <div class="form-inline">
+                <label for="units">Number of cups:</label>
+                <input type="text" class="form-control" id="units">
+              </div>
+              <div class="form-inline">
+                <label for="price">Price per cup: </label>
+                <input type="text" class="form-control" id="price">
+              </div> -->
+              <div>
+                <button type="submit" class="btn btn-default">Buy</button>
+              </div>
+              <div style="margin-top: 10px;">
+                <div style="display: inline-block; text-align: right;">Your Total Order:</div>
+                <div style="display:inline-block" id="totalprice">&nbsp;</div>
+              </div>
+            </form>
+            <div class="availablity">
+              <span class="available">Shipping: </span><span id="shipping"></span>
+              <span class="shipping"> Available:</span><span id="stock"></span>
             </div>
-            <div class="row"></div>
-
-            <div class="form-group">
-              <label for="price">Price per cup: </label>
-              <input type="text" class="form-control" id="price">
+            <div id="messageOffer">
+              this is the offer message
             </div>
-            <div>
-              <button type="submit" class="btn btn-default">Buy</button>
-            </div>
-            <div style="margin-top: 10px;">
-            <div style="display: inline-block">Your Total Order:</div>
-            <div style="display:inline-block" id="totalprice">&nbsp;</div>
-            </div>
-          </form>
-          <div class="availablity">
-          <div class="available">Shipping: <span id="shipping"></span></div>
-          <div class="shipping"> Available: <span id="stock"></span></div>
-          </div>
-          <div id="messageOffer">
-          this is the offer message
-          <div>
-        </div>
 
           <!-- <form  action="javascript:totalPriceCallback(document.getElementById('units').value, document.getElementById('price').value)">
 
@@ -111,15 +116,13 @@
             </div>
           </form> -->
 
-          <div class="row spacer"><br/>
-
+          </div>
           </div>
 
-        </div>
+</div>
 
 
-
-      </div><!-- /.container -->
+      <!-- /.container -->
 
 
 
